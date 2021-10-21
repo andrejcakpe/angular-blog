@@ -1,0 +1,32 @@
+<!--
+<div *ngFor="let post of posts" class="post-container">
+    <span>{{ post.title }} is {{ post.content }} years old</span>
+  </div>
+-->
+
+  
+  <div class="header">
+    <h2>Visma Blog</h2>
+  </div>
+  
+  <div *ngFor="let post of posts" class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>{{ post.title }}</h2>
+        <h5>{{ post.content }}</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <div *ngFor="let user of users">
+            <h2>{{ user.username }}</h2>
+          </div>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
+  

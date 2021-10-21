@@ -1,0 +1,38 @@
+
+<!--
+<app-users-list 
+[users]="users">
+</app-users-list>
+
+
+<app-posts-list
+[posts]="posts">
+</app-posts-list>
+-->
+
+<app-comments-list
+  [comments]="comments">
+</app-comments-list>
+
+
+<div class="header">
+    <h2>Visma Blog</h2>
+  </div>
+
+
+  <div *ngFor="let post of posts" class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>{{ post.title }} </h2>
+        <h5>{{ post.content }}</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <div *ngFor="let user of users">
+          <h4>Author: {{ user.username }}</h4>
+      </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+        
